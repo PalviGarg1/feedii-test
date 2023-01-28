@@ -40,7 +40,7 @@ export const SurveyPage = () => {
     React.useEffect(
         ()=> {      
 
-        fetch('https://entity-feediiapi.azurewebsites.net/api/admin/getAdminSurveyDetailAged/' + sessionscholid , {
+        fetch('https://feedii-test-api.azurewebsites.net/api/admin/getAdminSurveyDetailAged/' + sessionscholid , {
             method: 'GET'
         }) .then((response) => response.json())
         .then((data) => {
@@ -62,7 +62,7 @@ export const SurveyPage = () => {
 
 
         //alert(sessionscholid);
-        fetch('https://entity-feediiapi.azurewebsites.net/api/admin/getAdminSurveyDetail/' + sessionscholid , {
+        fetch('https://feedii-test-api.azurewebsites.net/api/admin/getAdminSurveyDetail/' + sessionscholid , {
             method: 'GET'
         }) .then((response) => response.json())
         .then((data) => {
@@ -134,7 +134,7 @@ export const SurveyPage = () => {
       const fetchstaffdetails = (pulseid) => {
         //alert(pulseid);
            
-        fetch('https://entity-feediiapi.azurewebsites.net/api/admin/getAdminSurveyTargetSummary/' + pulseid + "-" + "Student" + "-" +  "Teacher" + "-" + 0  , {   //studentid-pulseid
+        fetch('https://feedii-test-api.azurewebsites.net/api/admin/getAdminSurveyTargetSummary/' + pulseid + "-" + "Student" + "-" +  "Teacher" + "-" + 0  , {   //studentid-pulseid
             method: 'GET'
         }) .then((response) => response.json())
         .then((data) => {
@@ -167,7 +167,7 @@ export const SurveyPage = () => {
     const fetchschooldetails = (pulseid) => {
         //alert(pulseid);
            
-        fetch('https://entity-feediiapi.azurewebsites.net/api/admin/getAdminSurveyTargetSummary/' + pulseid + "-" + "Student" + "-" +  "School" + "-" + 0 , {   //pulseid-participantid
+        fetch('https://feedii-test-api.azurewebsites.net/api/admin/getAdminSurveyTargetSummary/' + pulseid + "-" + "Student" + "-" +  "School" + "-" + 0 , {   //pulseid-participantid
             method: 'GET'
         }) .then((response) => response.json())
         .then((data) => {

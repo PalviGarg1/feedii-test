@@ -38,7 +38,7 @@ $(document).ready(function () {
         $("#wtdvbtn1").click(function(){
             $.ajax({
                 
-                url: "https://entity-feedii-api.azurewebsites.net/api/login/getverifyToken/" + tokenn,
+                url: "https://feedii-test-api.azurewebsites.net/api/login/getverifyToken/" + tokenn,
                 type: "GET",
                 success: function (response) {
                    
@@ -124,7 +124,7 @@ $(document).ready(function () {
             var rcvMaterId = localStorage.Masteridsnd;
             $.ajax({
                 
-                url: "https://entity-feedii-api.azurewebsites.net/api/login/getLink/" + rcvMaterId + "-"+"School",
+                url: "https://feedii-test-api.azurewebsites.net/api/login/getLink/" + rcvMaterId + "-"+"School",
                 type: "GET",
                 success: function (response) {
                    

@@ -78,7 +78,7 @@ export const Staffpage = () => {
     React.useEffect(
         ()=> {
 
-     fetch('https://entity-feediiapi.azurewebsites.net/api/Admin/getAllstaffJoined/' + sessionschoolid, {
+     fetch('https://feedii-test-api.azurewebsites.net/api/Admin/getAllstaffJoined/' + sessionschoolid, {
             method: 'GET'
           }) .then((response) => response.json())
           .then((data) => {
@@ -99,7 +99,7 @@ export const Staffpage = () => {
 
 
 
-          fetch('https://entity-feediiapi.azurewebsites.net/api/Admin/getAllstaffInvited/' + sessionschoolid, {
+          fetch('https://feedii-test-api.azurewebsites.net/api/Admin/getAllstaffInvited/' + sessionschoolid, {
             method: 'GET'
           }) .then((response) => response.json())
           .then((data) => {
@@ -120,7 +120,7 @@ export const Staffpage = () => {
 
 
 
-          fetch('https://entity-feediiapi.azurewebsites.net/api/Admin/getAllstaffPendingApproval/' + sessionschoolid, {
+          fetch('https://feedii-test-api.azurewebsites.net/api/Admin/getAllstaffPendingApproval/' + sessionschoolid, {
             method: 'GET'
           }) .then((response) => response.json())
           .then((data) => {
@@ -139,7 +139,7 @@ export const Staffpage = () => {
               console.log(error);
           });
 
-          fetch('https://entity-feediiapi.azurewebsites.net/api/Admin/getAllstaffReject/' + sessionschoolid, {
+          fetch('https://feedii-test-api.azurewebsites.net/api/Admin/getAllstaffReject/' + sessionschoolid, {
             method: 'GET'
           }) .then((response) => response.json())
           .then((data) => {
@@ -414,7 +414,7 @@ export const Staffpage = () => {
 
     // const callsaveapi = () => {
     //     //alert()
-    //     fetch('https://entity-feediiapi.azurewebsites.net/api/staff/Delete_Staff', {
+    //     fetch('https://feedii-test-api.azurewebsites.net/api/staff/Delete_Staff', {
     //         method: 'POST', 
     //         headers: {
     //             'Accept': 'application/json',
@@ -441,7 +441,7 @@ export const Staffpage = () => {
 
     const callstatusleftapi = () => {
         // alert(JSON.stringify(staffaddleft))
-        fetch('https://entity-feediiapi.azurewebsites.net/api/staff/Update_StaffStatus', {
+        fetch('https://feedii-test-api.azurewebsites.net/api/staff/Update_StaffStatus', {
             method: 'POST', 
             headers: {
                 'Accept': 'application/json',
@@ -469,7 +469,7 @@ export const Staffpage = () => {
         $('#mdlbtntxt2').addClass('hide');
 
         // alert(JSON.stringify(staffaddreject))
-        fetch('https://entity-feediiapi.azurewebsites.net/api/staff/Update_StaffStatus', {
+        fetch('https://feedii-test-api.azurewebsites.net/api/staff/Update_StaffStatus', {
             method: 'POST', 
             headers: {
                 'Accept': 'application/json',
@@ -498,7 +498,7 @@ export const Staffpage = () => {
         $('#mdlbtntxt2').addClass('hide');
 
         // alert(JSON.stringify(staffaddapprove))
-        fetch('https://entity-feediiapi.azurewebsites.net/api/staff/Update_StaffStatus', {
+        fetch('https://feedii-test-api.azurewebsites.net/api/staff/Update_StaffStatus', {
             method: 'POST', 
             headers: {
                 'Accept': 'application/json',
@@ -523,7 +523,7 @@ export const Staffpage = () => {
 
     const fetchstaffdetails = (staffid) => {
     //    alert(staffid)
-        fetch('https://entity-feediiapi.azurewebsites.net/api/Staff/getStaffClassroom/' + staffid, {
+        fetch('https://feedii-test-api.azurewebsites.net/api/Staff/getStaffClassroom/' + staffid, {
             method: 'GET'
           }) .then((response) => response.json())
           .then((data) => {    

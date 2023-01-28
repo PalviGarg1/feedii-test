@@ -37,7 +37,7 @@ export const OldSurveyPage = () => {
        
 
            
-            fetch('https://entity-feediiapi.azurewebsites.net/api/Admin/getSession/' + sessionschoolid, {
+            fetch('https://feedii-test-api.azurewebsites.net/api/Admin/getSession/' + sessionschoolid, {
             method: 'GET'
           }) .then((response) => response.json())
           .then((data) => {
@@ -56,7 +56,7 @@ export const OldSurveyPage = () => {
 
 
 
-fetch('https://entity-feediiapi.azurewebsites.net/api/Admin/getAdminSurveyDetailUpcomming/' + schoolcurrentid, {
+fetch('https://feedii-test-api.azurewebsites.net/api/Admin/getAdminSurveyDetailUpcomming/' + schoolcurrentid, {
     method: 'GET'
   }) .then((response) => response.json())
   .then((data) => {
@@ -75,7 +75,7 @@ fetch('https://entity-feediiapi.azurewebsites.net/api/Admin/getAdminSurveyDetail
 
 
 
-  fetch('https://entity-feediiapi.azurewebsites.net/api/Admin/getAdminSurveyDetail/' + schoolcurrentid, {
+  fetch('https://feedii-test-api.azurewebsites.net/api/Admin/getAdminSurveyDetail/' + schoolcurrentid, {
     method: 'GET'
   }) .then((response) => response.json())
   .then((data) => {
@@ -131,7 +131,7 @@ fetch('https://entity-feediiapi.azurewebsites.net/api/Admin/getAdminSurveyDetail
 
         
 
-            fetch('https://entity-feediiapi.azurewebsites.net/api/Admin/getAdminSurveyDetailUpcomming/' + opnvl, {
+            fetch('https://feedii-test-api.azurewebsites.net/api/Admin/getAdminSurveyDetailUpcomming/' + opnvl, {
                 method: 'GET'
             }) .then((response) => response.json())
             .then((data) => {
@@ -149,7 +149,7 @@ fetch('https://entity-feediiapi.azurewebsites.net/api/Admin/getAdminSurveyDetail
 
 
 
-            fetch('https://entity-feediiapi.azurewebsites.net/api/Admin/getAdminSurveyDetail/' + opnvl, {
+            fetch('https://feedii-test-api.azurewebsites.net/api/Admin/getAdminSurveyDetail/' + opnvl, {
                 method: 'GET'
             }) .then((response) => response.json())
             .then((data) => {

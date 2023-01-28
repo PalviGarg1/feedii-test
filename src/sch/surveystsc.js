@@ -63,7 +63,7 @@ export const SurveyStudentToSchoolPage = () => {
 
 
            
-            fetch('https://entity-feediiapi.azurewebsites.net/api/admin/getAdminSurveyDetailSummary/'+ sessionpulseid + "-" + "Student-" + "School-All" +"-" + sessionscholid , {
+            fetch('https://feedii-test-api.azurewebsites.net/api/admin/getAdminSurveyDetailSummary/'+ sessionpulseid + "-" + "Student-" + "School-All" +"-" + sessionscholid , {
             method: 'GET'
               }) .then((response) => response.json())
               .then((data) => {
@@ -93,7 +93,7 @@ export const SurveyStudentToSchoolPage = () => {
             console.log(error);
         });
 
-        fetch('https://entity-feediiapi.azurewebsites.net/api/admin/getclassesdata/' + sessionscholid , {
+        fetch('https://feedii-test-api.azurewebsites.net/api/admin/getclassesdata/' + sessionscholid , {
             method: 'GET'
         }) .then((response) => response.json())
         .then((data) => {
@@ -190,7 +190,7 @@ export const SurveyStudentToSchoolPage = () => {
 
       const fetchschooldetails = (studentidd) => {
        
-        fetch('https://entity-feediiapi.azurewebsites.net/api/admin/getAdminSurveyTargetSummary/' + sessionpulseid + "-" + "Student" + "-" +  "School" + "-" + studentidd , {   //pulseid-participantid
+        fetch('https://feedii-test-api.azurewebsites.net/api/admin/getAdminSurveyTargetSummary/' + sessionpulseid + "-" + "Student" + "-" +  "School" + "-" + studentidd , {   //pulseid-participantid
             method: 'GET'
         }) .then((response) => response.json())
         .then((data) => {    
@@ -234,7 +234,7 @@ export const SurveyStudentToSchoolPage = () => {
           
         const fetchstudentdetails = (studentida) => {
            alert(studentida);
-            fetch('https://entity-feediiapi.azurewebsites.net/api/Admin/getstudentSubject/' + studentida, {
+            fetch('https://feedii-test-api.azurewebsites.net/api/Admin/getstudentSubject/' + studentida, {
                 method: 'GET'
               }) .then((response) => response.json())
               .then((data) => {    

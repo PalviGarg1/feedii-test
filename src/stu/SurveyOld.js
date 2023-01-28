@@ -35,7 +35,7 @@ export const SurveyOldStudentPage = () => {
         ()=> {      
 
            
-            fetch('https://entity-feediiapi.azurewebsites.net/api/Admin/getSession/' + 3, {
+            fetch('https://feedii-test-api.azurewebsites.net/api/Admin/getSession/' + 3, {
             method: 'GET'
           }) .then((response) => response.json())
           .then((data) => {
@@ -54,7 +54,7 @@ export const SurveyOldStudentPage = () => {
 
 
 
-fetch('https://entity-feediiapi.azurewebsites.net/api/Student/getStudentSurveydetailUpcomming/' + studentid + '-' + schoolcurrentid, {
+fetch('https://feedii-test-api.azurewebsites.net/api/Student/getStudentSurveydetailUpcomming/' + studentid + '-' + schoolcurrentid, {
     method: 'GET'
   }) .then((response) => response.json())
   .then((data) => {
@@ -73,7 +73,7 @@ fetch('https://entity-feediiapi.azurewebsites.net/api/Student/getStudentSurveyde
 
 
 
-  fetch('https://entity-feediiapi.azurewebsites.net/api/Student/getStudentSurveydetail/' + studentid + '-' + schoolcurrentid, {
+  fetch('https://feedii-test-api.azurewebsites.net/api/Student/getStudentSurveydetail/' + studentid + '-' + schoolcurrentid, {
     method: 'GET'
   }) .then((response) => response.json())
   .then((data) => {
@@ -123,7 +123,7 @@ fetch('https://entity-feediiapi.azurewebsites.net/api/Student/getStudentSurveyde
 
         
 
-            fetch('https://entity-feediiapi.azurewebsites.net/api/Student/getStudentSurveydetailUpcomming/' + studentid + '-' + opnvl, {
+            fetch('https://feedii-test-api.azurewebsites.net/api/Student/getStudentSurveydetailUpcomming/' + studentid + '-' + opnvl, {
                 method: 'GET'
             }) .then((response) => response.json())
             .then((data) => {
@@ -141,7 +141,7 @@ fetch('https://entity-feediiapi.azurewebsites.net/api/Student/getStudentSurveyde
 
 
 
-            fetch('https://entity-feediiapi.azurewebsites.net/api/Student/getStudentSurveydetail/' + studentid + '-' +  opnvl, {
+            fetch('https://feedii-test-api.azurewebsites.net/api/Student/getStudentSurveydetail/' + studentid + '-' +  opnvl, {
                 method: 'GET'
             }) .then((response) => response.json())
             .then((data) => {

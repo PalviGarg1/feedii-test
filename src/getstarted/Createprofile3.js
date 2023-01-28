@@ -182,7 +182,7 @@ export const CreateProfileStu = () => {
         }
        
 
-        fetch('https://entity-feediiapi.azurewebsites.net/api/login/EnterStudent', {
+        fetch('https://feedii-test-api.azurewebsites.net/api/login/EnterStudent', {
             method: 'POST', 
             headers: {
                 'Accept': 'application/json',

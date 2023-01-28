@@ -129,7 +129,7 @@ $(document).ready(function () {
             $.ajax({
                 type: "POST",
                 //async: false,
-                url: "https://entity-feedii-api.azurewebsites.net/api/login/GetSetPassword",
+                url: "https://feedii-test-api.azurewebsites.net/api/login/GetSetPassword",
                 data: { masterid: rcvMaterId, password: newpassword},
                 success: function (msg) {
                     //alert("Data Saved: " + msg);
@@ -137,7 +137,7 @@ $(document).ready(function () {
                     $.ajax({
                         type: "POST",
                         //async: false,
-                        url: "https://entity-feedii-api.azurewebsites.net/api/login/Update_PasswordStatus",
+                        url: "https://feedii-test-api.azurewebsites.net/api/login/Update_PasswordStatus",
                         data: { masterid: rcvMaterId},
                         success: function (msg) {
                             alert("Password Created Successfully!");

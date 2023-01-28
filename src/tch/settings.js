@@ -51,7 +51,7 @@ export const ClassroomtchsettingsPagee = () => {
        
                 //staffid
            
-            fetch('https://entity-feediiapi.azurewebsites.net/api/Staff/getStaffAllClassSubject/' + staffidsession , {
+            fetch('https://feedii-test-api.azurewebsites.net/api/Staff/getStaffAllClassSubject/' + staffidsession , {
             method: 'GET'
             }) .then((response) => response.json())
           .then((data) => {
@@ -68,7 +68,7 @@ export const ClassroomtchsettingsPagee = () => {
           })
 
 
-          fetch('https://entity-feediiapi.azurewebsites.net/api/Staff/getAllSubject' , {
+          fetch('https://feedii-test-api.azurewebsites.net/api/Staff/getAllSubject' , {
             method: 'GET'
             }) .then((response) => response.json())
           .then((data) => {
@@ -83,7 +83,7 @@ export const ClassroomtchsettingsPagee = () => {
             
           })
 
-          fetch('https://entity-feediiapi.azurewebsites.net/api/Staff/getAllbatch/' + staffidsession, {
+          fetch('https://feedii-test-api.azurewebsites.net/api/Staff/getAllbatch/' + staffidsession, {
             method: 'GET'
             }) .then((response) => response.json())
           .then((data) => {
@@ -119,7 +119,7 @@ export const ClassroomtchsettingsPagee = () => {
 
       const fetchstatuscheck = () => {
             
-        fetch('https://entity-feediiapi.azurewebsites.net/api/Staff/getStaffStatusdata/' + staffidsession, {
+        fetch('https://feedii-test-api.azurewebsites.net/api/Staff/getStaffStatusdata/' + staffidsession, {
             method: 'GET'
           }) .then((response) => response.json())
           .then((data) => {    
@@ -171,7 +171,7 @@ export const ClassroomtchsettingsPagee = () => {
 
             //alert(subjectidtosend);
             //alert(batchidtosend);
-            fetch('https://entity-feediiapi.azurewebsites.net/api/staff/Delete_StaffSubjectBatch', {
+            fetch('https://feedii-test-api.azurewebsites.net/api/staff/Delete_StaffSubjectBatch', {
                 method: 'POST', 
                 headers: {
                     'Accept': 'application/json',  
@@ -231,7 +231,7 @@ export const ClassroomtchsettingsPagee = () => {
                 subjerr.hide();
                 clserr.hide();
 
-                fetch('https://entity-feediiapi.azurewebsites.net/api/staff/saveStaffSubjectbatch', {
+                fetch('https://feedii-test-api.azurewebsites.net/api/staff/saveStaffSubjectbatch', {
                     method: 'POST', 
                     headers: {
                         'Accept': 'application/json',  

@@ -99,7 +99,7 @@ export const Details = () => {
         // alert(emailSignup);
         // alert(accounttypepswrd);
 
-        fetch('https://entity-feediiapi.azurewebsites.net/api/login/GetUserValidated/' + emailSignup + "-" + accounttypepswrd + "/", {
+        fetch('https://feedii-test-api.azurewebsites.net/api/login/GetUserValidated/' + emailSignup + "-" + accounttypepswrd + "/", {
             method: 'GET'
           }) .then((response) => response.json())
           .then((data) => {

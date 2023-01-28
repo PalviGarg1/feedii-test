@@ -45,7 +45,7 @@ export const SurveyTemplateOneTchrPage = () => {
        
                 //staffid
               // alert(sessionpulseid);
-                fetch('https://entity-feediiapi.azurewebsites.net/api/admin/getSurveyTopic/'+ sessionsurveyid, {
+                fetch('https://feedii-test-api.azurewebsites.net/api/admin/getSurveyTopic/'+ sessionsurveyid, {
             method: 'GET'
             }) .then((response) => response.json())
           .then((data) => {
@@ -60,7 +60,7 @@ export const SurveyTemplateOneTchrPage = () => {
             $('#login').show();
           })
            
-            fetch('https://entity-feediiapi.azurewebsites.net/api/admin/getSurveyoptionTemplatePulse/' + sessionpulseid ,  {        //studentid-staffid-pulseid
+            fetch('https://feedii-test-api.azurewebsites.net/api/admin/getSurveyoptionTemplatePulse/' + sessionpulseid ,  {        //studentid-staffid-pulseid
             method: 'GET'
             }) .then((response) => response.json())
           .then((data) => {

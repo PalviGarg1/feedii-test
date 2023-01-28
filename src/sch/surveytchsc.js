@@ -56,7 +56,7 @@ export const SurveyTeacherToSchoolPage = () => {
         ()=> {      
 
            
-            fetch('https://entity-feediiapi.azurewebsites.net/api/admin/getAdminSurveyDetailSummary/'+ sessionpulseid + "-" + "Teacher-School-All-" + sessionscholid , {
+            fetch('https://feedii-test-api.azurewebsites.net/api/admin/getAdminSurveyDetailSummary/'+ sessionpulseid + "-" + "Teacher-School-All-" + sessionscholid , {
             method: 'GET'
              }) .then((response) => response.json())
             .then((data) => {
@@ -79,7 +79,7 @@ export const SurveyTeacherToSchoolPage = () => {
             console.log(error);
         });
 
-        fetch('https://entity-feediiapi.azurewebsites.net/api/admin/getclassesdata/' + sessionscholid , {
+        fetch('https://feedii-test-api.azurewebsites.net/api/admin/getclassesdata/' + sessionscholid , {
             method: 'GET'
         }) .then((response) => response.json())
         .then((data) => {
@@ -126,7 +126,7 @@ export const SurveyTeacherToSchoolPage = () => {
 
       const fetchstaffdetails = (staffid) => {
             //alert(staffid)
-            fetch('https://entity-feediiapi.azurewebsites.net/api/Staff/getStaffClassroom/' + staffid, {
+            fetch('https://feedii-test-api.azurewebsites.net/api/Staff/getStaffClassroom/' + staffid, {
                 method: 'GET'
               }) .then((response) => response.json())
               .then((data) => {    
@@ -157,7 +157,7 @@ export const SurveyTeacherToSchoolPage = () => {
 
         const fetchschooldetails = (staffid) => {
            
-            fetch('https://entity-feediiapi.azurewebsites.net/api/admin/getAdminSurveyTargetSummary/' + sessionpulseid + "-" + "Teacher" + "-" +  "School" + "-" + staffid , {   //pulseid-participantid
+            fetch('https://feedii-test-api.azurewebsites.net/api/admin/getAdminSurveyTargetSummary/' + sessionpulseid + "-" + "Teacher" + "-" +  "School" + "-" + staffid , {   //pulseid-participantid
                 method: 'GET'
             }) .then((response) => response.json())
             .then((data) => {
@@ -180,7 +180,7 @@ export const SurveyTeacherToSchoolPage = () => {
 
         
 
-    //         fetch('https://entity-feediiapi.azurewebsites.net/api/Student/getStudentSurveydetailUpcomming/' + sessionstudentid + '-' + opnvl, {
+    //         fetch('https://feedii-test-api.azurewebsites.net/api/Student/getStudentSurveydetailUpcomming/' + sessionstudentid + '-' + opnvl, {
     //             method: 'GET'
     //         }) .then((response) => response.json())
     //         .then((data) => {
@@ -198,7 +198,7 @@ export const SurveyTeacherToSchoolPage = () => {
 
 
 
-    //         fetch('https://entity-feediiapi.azurewebsites.net/api/Student/getStudentSurveydetail/' + studentid + '-' +  opnvl, {
+    //         fetch('https://feedii-test-api.azurewebsites.net/api/Student/getStudentSurveydetail/' + studentid + '-' +  opnvl, {
     //             method: 'GET'
     //         }) .then((response) => response.json())
     //         .then((data) => {

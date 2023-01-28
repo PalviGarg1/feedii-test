@@ -187,7 +187,7 @@ $(document).ready(function () {
         //alert('admnname - ' + admnname + 'email - ' + email + 'pq - ' + pq + 'designation - ' + designation + 'schlname - ' + schlnm + ' | schlwbst - ' + schlwbst + ' | phnnum - ' + phnnum + ' | schladdrss - ' + schladdrss + ' | schlcty - ' + schlcty + ' | schlcod - ' + schlcod + ' | schlstat - ' + schlstat + ' | cntryname - ' + cntryname)
 
         $.ajax({
-            url: "https://entity-feedii-api.azurewebsites.net/api/login/EnterShoolProfile",
+            url: "https://feedii-test-api.azurewebsites.net/api/login/EnterShoolProfile",
             type: "POST",
             data: { usermasterId : rcvProfileMasterId, schoolName : schlnm, contactPersonName : contactperson, 
                 designation : designation,  website: schlwbst, city: schlcty,  state: schlstat, country: cntryname },

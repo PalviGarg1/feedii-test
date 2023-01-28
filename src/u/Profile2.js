@@ -21,7 +21,7 @@ export const Teacherprofile = () => {
    
        
     const fetchData = () => {
-        fetch('https://entity-feediiapi.azurewebsites.net/api/Staff/getStaffProfile/' + staffidtosend)
+        fetch('https://feedii-test-api.azurewebsites.net/api/Staff/getStaffProfile/' + staffidtosend)
           .then(response => {
             return response.json()
           })

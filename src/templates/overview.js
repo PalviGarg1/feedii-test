@@ -22,7 +22,7 @@ export const SurveyTemplateOverviewPage = () => {
     React.useEffect(
         ()=> {
                              
-            fetch('https://entity-feediiapi.azurewebsites.net/api/admin/getAllSurveydata' ,  {        //studentid-staffid-pulseid
+            fetch('https://feedii-test-api.azurewebsites.net/api/admin/getAllSurveydata' ,  {        //studentid-staffid-pulseid
             method: 'GET'
             }) .then((response) => response.json())
           .then((data) => {

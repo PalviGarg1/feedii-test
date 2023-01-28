@@ -23,10 +23,10 @@ export const CreatePasswordFromEmail = () => {
     
     React.useEffect(
         ()=> {
-            if(id == "https://testfeedii.netlify.app/getstarted/createpasswordpg")
+            if(id == "https://feedii-test-infoity.netlify.app/getstarted/createpasswordpg")
             {
           
-                fetch('https://entity-feediiapi.azurewebsites.net/api/login/gettokendata/' + emailSignup + "/", {
+                fetch('https://feedii-test-api.azurewebsites.net/api/login/gettokendata/' + emailSignup + "/", {
                     method: 'GET'
                   }) .then((response) => response.json())
                   .then((data) => {
@@ -90,7 +90,7 @@ export const CreatePasswordFromEmail = () => {
                   });
             }
             else{
-    fetch('https://entity-feediiapi.azurewebsites.net/api/login/getverifyforgotToken/' + id, {
+    fetch('https://feedii-test-api.azurewebsites.net/api/login/getverifyforgotToken/' + id, {
             method: 'GET'
           }) .then((response) => response.json())
           .then((data) => {
@@ -233,7 +233,7 @@ export const CreatePasswordFromEmail = () => {
             var newpassword = "Feedie" + password + "1@23";
             var rcvMaterId = sessionStorage.getItem("Masteridsnd");
             //alert(rcvMaterId);
-            fetch('https://entity-feediiapi.azurewebsites.net/api/login/GetSetPassword', {
+            fetch('https://feedii-test-api.azurewebsites.net/api/login/GetSetPassword', {
                 method: 'POST', 
                 headers: {
                   'Accept': 'application/json',
@@ -272,7 +272,7 @@ export const CreatePasswordFromEmail = () => {
             var rcvMaterId = sessionStorage.getItem("Masteridsnd");
             var isforgot = sessionStorage.getItem("isforgot");
     
-            fetch('https://entity-feediiapi.azurewebsites.net/api/login/getLink/' + rcvMaterId + '-' + accounttypeacntverify +"-" + isforgot, {
+            fetch('https://feedii-test-api.azurewebsites.net/api/login/getLink/' + rcvMaterId + '-' + accounttypeacntverify +"-" + isforgot, {
                 method: 'GET'
               }) .then((response) => response.json())
               .then((data) => {

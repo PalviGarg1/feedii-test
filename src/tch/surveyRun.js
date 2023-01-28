@@ -67,7 +67,7 @@ export const SurveyRunTeacherPage = () => {
     React.useEffect(
         ()=> {
             //alert(sessionpulseid + "-" + staffidsession);
-            fetch('https://entity-feediiapi.azurewebsites.net/api/Student/getSurveyTopicandQuestiondetail/' + sessionpulseid , {         //pulseid
+            fetch('https://feedii-test-api.azurewebsites.net/api/Student/getSurveyTopicandQuestiondetail/' + sessionpulseid , {         //pulseid
             method: 'GET'
             }) .then((response) => response.json())
           .then((data) => {
@@ -83,7 +83,7 @@ export const SurveyRunTeacherPage = () => {
           })
            
           
-            fetch('https://entity-feediiapi.azurewebsites.net/api/Staff/getSchoolStaffSurveyquestion/' +  staffidsession + "-" + sessionpulseid ,  {        //studentid-staffid-pulseid
+            fetch('https://feedii-test-api.azurewebsites.net/api/Staff/getSchoolStaffSurveyquestion/' +  staffidsession + "-" + sessionpulseid ,  {        //studentid-staffid-pulseid
             method: 'GET'
             }) .then((response) => response.json())
           .then((data) => {
@@ -200,7 +200,7 @@ export const SurveyRunTeacherPage = () => {
          })
       
        
-        fetch('https://entity-feediiapi.azurewebsites.net/api/student/saveallsurveyResponse', {
+        fetch('https://feedii-test-api.azurewebsites.net/api/student/saveallsurveyResponse', {
                     method: 'POST', 
                     headers: {
                         'Accept': 'application/json',  

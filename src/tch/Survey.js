@@ -40,7 +40,7 @@ export const SurveyTeacherPage = () => {
         ()=> {
        
            //alert(staffidsession);
-            fetch('https://entity-feediiapi.azurewebsites.net/api/staff/getSurveyTeacherDashboardforme/' + staffidsession, {
+            fetch('https://feedii-test-api.azurewebsites.net/api/staff/getSurveyTeacherDashboardforme/' + staffidsession, {
             method: 'GET'
             }) .then((response) => response.json())
             .then((data) => {
@@ -57,7 +57,7 @@ export const SurveyTeacherPage = () => {
             });
 
 
-        fetch('https://entity-feediiapi.azurewebsites.net/api/staff/getSurveyTeacherDashboardformeAged/' + staffidsession, {
+        fetch('https://feedii-test-api.azurewebsites.net/api/staff/getSurveyTeacherDashboardformeAged/' + staffidsession, {
             method: 'GET'
         }) .then((response) => response.json())
         .then((data) => {
@@ -80,7 +80,7 @@ export const SurveyTeacherPage = () => {
           
         const fetchteacherdetails = (pulseid) => {
            
-            fetch('https://entity-feediiapi.azurewebsites.net/api/admin/getstaffSurveyTargetSummary/' + pulseid + "-"  + staffidsession , {   //pulseid-participantid
+            fetch('https://feedii-test-api.azurewebsites.net/api/admin/getstaffSurveyTargetSummary/' + pulseid + "-"  + staffidsession , {   //pulseid-participantid
                 method: 'GET'
             }) .then((response) => response.json())
             .then((data) => {

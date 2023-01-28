@@ -222,7 +222,7 @@ export const CreateProfile = () => {
         
         //alert(rcvProfileMasterId);
 
-        fetch('https://entity-feediiapi.azurewebsites.net/api/login/EnterShoolProfile', {
+        fetch('https://feedii-test-api.azurewebsites.net/api/login/EnterShoolProfile', {
             method: 'POST', 
             headers: {
                 'Accept': 'application/json',

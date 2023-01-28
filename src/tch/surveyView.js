@@ -41,7 +41,7 @@ export const SurveyViewTeacherPage = () => {
                 //staffid
                 //alert(staffidsession + " " +sessionpulseid);
 
-                fetch('https://entity-feediiapi.azurewebsites.net/api/Student/getSurveyTopicandQuestiondetailView/' + sessionpulseid + "-" + "Teacher" + "-" + "School" + "-" + staffidsession + "-" + 0 , {        //pulseid
+                fetch('https://feedii-test-api.azurewebsites.net/api/Student/getSurveyTopicandQuestiondetailView/' + sessionpulseid + "-" + "Teacher" + "-" + "School" + "-" + staffidsession + "-" + 0 , {        //pulseid
             method: 'GET'
             }) .then((response) => response.json())
             .then((data) => {
@@ -58,7 +58,7 @@ export const SurveyViewTeacherPage = () => {
 
           
            
-            fetch('https://entity-feediiapi.azurewebsites.net/api/Staff/getSchoolStaffSurveyquestion/' + staffidsession + "-" + sessionpulseid,  {        //studentid-staffid-pulseid
+            fetch('https://feedii-test-api.azurewebsites.net/api/Staff/getSchoolStaffSurveyquestion/' + staffidsession + "-" + sessionpulseid,  {        //studentid-staffid-pulseid
             method: 'GET'
             }) .then((response) => response.json())
           .then((data) => {

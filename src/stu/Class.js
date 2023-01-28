@@ -41,7 +41,7 @@ export const UserstuClass = () => {
     React.useEffect(
         ()=> {
                  //studentid
-            fetch('https://entity-feediiapi.azurewebsites.net/api/Student/getStudentStaffs/' + sessionstudentid, {
+            fetch('https://feedii-test-api.azurewebsites.net/api/Student/getStudentStaffs/' + sessionstudentid, {
             method: 'GET'
           }) .then((response) => response.json())
           .then((data) => {
@@ -377,7 +377,7 @@ export const UserstuClass = () => {
 
     const fetchstaffdetails = (staffid) => {
         
-            fetch('https://entity-feediiapi.azurewebsites.net/api/Staff/getStudentStaffClassroom/' + staffid + "-" + sessionstudentid, {
+            fetch('https://feedii-test-api.azurewebsites.net/api/Staff/getStudentStaffClassroom/' + staffid + "-" + sessionstudentid, {
                 method: 'GET'
               }) .then((response) => response.json())
               .then((data) => {    

@@ -57,7 +57,7 @@ export const SurveyStudentToTeacherPage = () => {
     React.useEffect(
         ()=> {      
 
-            fetch('https://entity-feediiapi.azurewebsites.net/api/admin/getAdminSurveyDetailSummary/'+ sessionpulseid + "-" + "Student" + "-" + "Teacher" + "-" + "All" + "-" + sessionscholid , {
+            fetch('https://feedii-test-api.azurewebsites.net/api/admin/getAdminSurveyDetailSummary/'+ sessionpulseid + "-" + "Student" + "-" + "Teacher" + "-" + "All" + "-" + sessionscholid , {
             method: 'GET'
               }) .then((response) => response.json())
              .then((data) => {
@@ -85,7 +85,7 @@ export const SurveyStudentToTeacherPage = () => {
             console.log(error);
         });
 
-        fetch('https://entity-feediiapi.azurewebsites.net/api/admin/getclassesdata/'+ sessionscholid , {
+        fetch('https://feedii-test-api.azurewebsites.net/api/admin/getclassesdata/'+ sessionscholid , {
             method: 'GET'
         }) .then((response) => response.json())
         .then((data) => {
@@ -202,7 +202,7 @@ export const SurveyStudentToTeacherPage = () => {
 
         const fetchstaffdetails = (studentid) => {
            
-            fetch('https://entity-feediiapi.azurewebsites.net/api/admin/getAdminSurveyTargetSummary/' + sessionpulseid + "-" + "Student" + "-" +  "Teacher" + "-" + studentid , {   //studentid-pulseid
+            fetch('https://feedii-test-api.azurewebsites.net/api/admin/getAdminSurveyTargetSummary/' + sessionpulseid + "-" + "Student" + "-" +  "Teacher" + "-" + studentid , {   //studentid-pulseid
                 method: 'GET'
             }) .then((response) => response.json())
             .then((data) => {
@@ -226,7 +226,7 @@ export const SurveyStudentToTeacherPage = () => {
 
         const fetchstudentdetails = (studentida) => {
            
-            fetch('https://entity-feediiapi.azurewebsites.net/api/Admin/getstudentSubject/' + studentida, {
+            fetch('https://feedii-test-api.azurewebsites.net/api/Admin/getstudentSubject/' + studentida, {
                 method: 'GET'
               }) .then((response) => response.json())
               .then((data) => {    

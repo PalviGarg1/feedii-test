@@ -35,7 +35,7 @@ export const SurveyTeacherPage = () => {
        
 
            
-            fetch('https://entity-feediiapi.azurewebsites.net/api/Admin/getSession/' + schoolcurrentid, {
+            fetch('https://feedii-test-api.azurewebsites.net/api/Admin/getSession/' + schoolcurrentid, {
             method: 'GET'
           }) .then((response) => response.json())
           .then((data) => {
@@ -54,7 +54,7 @@ export const SurveyTeacherPage = () => {
 
 
 
-fetch('https://entity-feediiapi.azurewebsites.net/api/Staff/getSurveyTeacherDashboardUpcomming/' + studentid + '-' + schoolcurrentid, {
+fetch('https://feedii-test-api.azurewebsites.net/api/Staff/getSurveyTeacherDashboardUpcomming/' + studentid + '-' + schoolcurrentid, {
     method: 'GET'
   }) .then((response) => response.json())
   .then((data) => {
@@ -73,7 +73,7 @@ fetch('https://entity-feediiapi.azurewebsites.net/api/Staff/getSurveyTeacherDash
 
 
 
-  fetch('https://entity-feediiapi.azurewebsites.net/api/Staff/getSurveyTeacherDashboard/' + studentid + '-' + schoolcurrentid, {
+  fetch('https://feedii-test-api.azurewebsites.net/api/Staff/getSurveyTeacherDashboard/' + studentid + '-' + schoolcurrentid, {
     method: 'GET'
   }) .then((response) => response.json())
   .then((data) => {
@@ -124,7 +124,7 @@ fetch('https://entity-feediiapi.azurewebsites.net/api/Staff/getSurveyTeacherDash
 
         
 
-            fetch('https://entity-feediiapi.azurewebsites.net/api/Staff/getSurveyTeacherDashboardUpcomming/' + studentid + '-' + opnvl, {
+            fetch('https://feedii-test-api.azurewebsites.net/api/Staff/getSurveyTeacherDashboardUpcomming/' + studentid + '-' + opnvl, {
                 method: 'GET'
             }) .then((response) => response.json())
             .then((data) => {
@@ -142,7 +142,7 @@ fetch('https://entity-feediiapi.azurewebsites.net/api/Staff/getSurveyTeacherDash
 
 
 
-            fetch('https://entity-feediiapi.azurewebsites.net/api/Staff/getSurveyTeacherDashboard/'  + studentid + '-' + opnvl, {
+            fetch('https://feedii-test-api.azurewebsites.net/api/Staff/getSurveyTeacherDashboard/'  + studentid + '-' + opnvl, {
                 method: 'GET'
             }) .then((response) => response.json())
             .then((data) => {

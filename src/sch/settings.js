@@ -47,7 +47,7 @@ export const ClassroomschsettingsPagee = () => {
         ()=> {
        
            
-            fetch('https://entity-feediiapi.azurewebsites.net/api/Admin/getclassesdata/' + 1, {
+            fetch('https://feedii-test-api.azurewebsites.net/api/Admin/getclassesdata/' + 1, {
             method: 'GET'
           }) .then((response) => response.json())
           .then((data) => {

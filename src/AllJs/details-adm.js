@@ -70,7 +70,7 @@ $(document).ready(function () {
         $('#nxt-btnneml #nxt-btnn-txt').css('display', 'none');
 
         $.ajax({
-            url: "https://entity-feedii-api.azurewebsites.net/api/login/GetUserValidated/" + eml + "-" + acnttype2 + "/",
+            url: "https://feedii-test-api.azurewebsites.net/api/login/GetUserValidated/" + eml + "-" + acnttype2 + "/",
             type: "GET",
             success: function (response) {
                 

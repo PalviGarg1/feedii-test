@@ -23,7 +23,7 @@ export const Studentprofile = () => {
    
     
     const fetchData = () => {
-        fetch('https://entity-feediiapi.azurewebsites.net/api/Student/getStudentProfile/' + studentidtosend)
+        fetch('https://feedii-test-api.azurewebsites.net/api/Student/getStudentProfile/' + studentidtosend)
           .then(response => {
             return response.json()
           })

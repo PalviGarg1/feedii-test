@@ -30,7 +30,7 @@ export const ClassroomPage = () => {
         ()=> {
        
            
-            fetch('https://entity-feediiapi.azurewebsites.net/api/Admin/getclassesdata/' + sessionscholid, {
+            fetch('https://feedii-test-api.azurewebsites.net/api/Admin/getclassesdata/' + sessionscholid, {
             method: 'GET'
           }) .then((response) => response.json())
           .then((data) => {

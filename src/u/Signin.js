@@ -84,7 +84,7 @@ export const Signin = () => {
        
   
         //alert(acounttype);
-        fetch('https://entity-feediiapi.azurewebsites.net/api/login/GetUserSignin/' + emailSignin + "-" + acounttype + "/", {
+        fetch('https://feedii-test-api.azurewebsites.net/api/login/GetUserSignin/' + emailSignin + "-" + acounttype + "/", {
             method: 'GET'
           }) .then((response) => response.json())
           .then((data) => {
@@ -130,7 +130,7 @@ export const Signin = () => {
 
                     if (ValidorNot == "Valid Account")
                     {
-                    fetch('https://entity-feediiapi.azurewebsites.net/Token', {
+                    fetch('https://feedii-test-api.azurewebsites.net/Token', {
                         method: 'POST',
                         headers: {               
                              'Content-Type': 'application/x-www-form-urlencoded',

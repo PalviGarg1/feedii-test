@@ -112,7 +112,7 @@ $(document).ready(function () {
             $("#admnnxt-btnn #nxt-btnn-loader").css('display', 'block');
 
             $.ajax({
-                url: "https://new-feediii-api.azurewebsites.net/api/signup/getschoolExist/" + admnvcd,
+                url: "https://feedii-test-api.azurewebsites.net/api/signup/getschoolExist/" + admnvcd,
                 type: "GET",
                 success: function (result) {
 
@@ -171,7 +171,7 @@ $(document).ready(function () {
                         var message = "Error:400 Bad Request for usermasterid" + actp;
                         //$.ajax({
                         //    type: "POST",
-                        //    url: " https://new-feediii-api.azurewebsites.net/api/activities/EnterlogData",
+                        //    url: " https://feedii-test-api.azurewebsites.net/api/activities/EnterlogData",
                         //    data: { logType: "Web", logdoneby: "Student", logdoneId: 0, message: message, module: "create profile", logDonefor: "Tool" },
                         //    success: function (msg) {
                         //        location.replace("/Error/Error_400")
@@ -183,7 +183,7 @@ $(document).ready(function () {
 
                         //$.ajax({
                         //    type: "POST",
-                        //    url: " https://new-feediii-api.azurewebsites.net/api/activities/EnterlogData",
+                        //    url: " https://feedii-test-api.azurewebsites.net/api/activities/EnterlogData",
                         //    data: { logType: "Web", logdoneby: "Student", logdoneId: 0, message: message, module: "create profile", logDonefor: "Tool" },
                         //    success: function (msg) {
                         //        location.replace("/Error/Error_404")
@@ -194,7 +194,7 @@ $(document).ready(function () {
                         var message = "Error:500 Internal server error for usermasterid " + actp;
                         //$.ajax({
                         //    type: "POST",
-                        //    url: " https://new-feediii-api.azurewebsites.net/api/activities/EnterlogData",
+                        //    url: " https://feedii-test-api.azurewebsites.net/api/activities/EnterlogData",
                         //    data: { logType: "Web", logdoneby: "Student", logdoneId: 0, message: message, module: "create profile", logDonefor: "Tool" },
                         //    success: function (msg) {
                         //        location.replace("/Error/Error_500")
@@ -205,7 +205,7 @@ $(document).ready(function () {
                         var message = "Unhandled Exception for usermasterid" + actp;
                         //$.ajax({
                         //    type: "POST",
-                        //    url: " https://new-feediii-api.azurewebsites.net/api/activities/EnterlogData",
+                        //    url: " https://feedii-test-api.azurewebsites.net/api/activities/EnterlogData",
                         //    data: { logType: "Web", logdoneby: "Student", logdoneId: 0, message: message, module: "create profile", logDonefor: "Tool" },
                         //    success: function (msg) {
                         //        location.replace("/Error/Error")
@@ -421,7 +421,7 @@ $(document).ready(function () {
 
             $.ajax({
                 type: "POST",
-                url: "https://new-feediii-api.azurewebsites.net/api/signup/EnterAdminBatchdetails",
+                url: "https://feedii-test-api.azurewebsites.net/api/signup/EnterAdminBatchdetails",
                 dataType: 'json',
                 data: { '': adminschooldatafinl },
                 success: function (data, textStatus, xhr) {
@@ -564,7 +564,7 @@ $(document).ready(function () {
 
             $.ajax({
                 type: "POST",
-                url: "https://new-feediii-api.azurewebsites.net/signup/EnterAdminSubjectdetails",
+                url: "https://feedii-test-api.azurewebsites.net/signup/EnterAdminSubjectdetails",
                 dataType: 'json',
                 data: { '': adminschoolsbjctsdatafinl },
                 success: function (data, textStatus, xhr) {
@@ -641,7 +641,7 @@ $(document).ready(function () {
 
             $.ajax({
                 type: "POST",
-                url: "https://new-feediii-api.azurewebsites.net/api/signup/EnterSchoolsession",
+                url: "https://feedii-test-api.azurewebsites.net/api/signup/EnterSchoolsession",
                 dataType: 'json',
                 data: { schoolid: schlid, startdate: startdate, endDate: enddate },
                 success: function (data, textStatus, xhr) {
