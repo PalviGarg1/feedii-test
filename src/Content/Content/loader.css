@@ -1,0 +1,25 @@
+#divLoader {
+    width: 60px;
+    height: 60px;
+    border-radius: 150px;
+    border: 3px solid #333e63;
+    border-top-color: #eee;
+    box-sizing: border-box;
+    position: fixed;
+    top: 50%;
+    left: 51.4%;
+    margin-top: -40px;
+    margin-left: -40px;
+    animation: loading 1.2s linear infinite;
+    -webkit-animation: loading 1.2s linear infinite;
+}
+
+@keyframes loading {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: rotate(360deg)
+    }
+}
